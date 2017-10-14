@@ -1,0 +1,40 @@
+
+<!-- The Emularity: An Example Arcade Machine Loader -->
+<!-- For use with The Emularity, downloadable at http://www.emularity.com/ -->
+
+<!-- For a collection of Arcade ROMs to download and test this script, visit http://mamedev.org/roms/ -->
+
+<!-- SIMPLE STEPS to starting your arcade (using the 1980 Exidy Arcade Game TARG) -->
+
+<!-- * Check out this repository in your browser-accessible directory;
+       this file as well as es6-promise.js, browserfs.min.js and
+       loader.js are required. The logo and images directories are
+       optional, but the splash screen looks quite a lot better when
+       they're available. -->
+<!-- * Use "git annex get <file>" to download emulators/jsmess/mameexidy.js;
+       if you don't have git-annex you can download it from IA manually
+       (https://archive.org/download/emularity_engine_v1/mameexidy.js.gz) -->
+<!-- * Download the Targ ROM files from http://mamedev.org/roms/targ/ -->
+<!-- * Place the Targ ROM .zip file in an "examples" subdirectory. -->
+<!-- * Visit your example_arcade.html file with a modern Javascript-capable browser. -->
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="MADEInCSS.css">
+    <title>The MADE Emulator</title>
+  </head>
+  <body>
+  <div class="dropdown">
+  <button onclick="myFunctions()" class="dropbtn">Atari 2600 Games</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#"<button onclick="myFunction(0)"></button>Halo</a>
+  </div>
+</div>
+    <canvas id="canvas" style="width: 50%; height: 50%; display: block; margin: 0 auto;"></canvas>
+    <script type="text/javascript" src="es6-promise.js"></script>
+    <script type="text/javascript" src="browserfs.min.js"></script>
+    <script type="text/javascript" src="loader.js"></script>
+    <script type="text/javascript" src="MADEInJS.js"></script>
+  </body>
+</html>
